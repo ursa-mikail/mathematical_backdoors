@@ -92,9 +92,12 @@ $$0 < e\,d_p - 1 < e\,(p-1) \quad\Longrightarrow\quad 1 \le k \le e-1.$$
 For $e = 65537$ that is **at most 65,536 candidates**, regardless of how big $p$ is.
 
 ### 4.3 Making $p$ appear
+
 Add $k$ to both sides:
 
-$$k\,p \;=\; e\,d_p - 1 + k \;=\; e\,(d_0 + x) - 1 + k. \tag{$\ast$}$$
+$$
+k\,p \;=\; e\,d_p - 1 + k \;=\; e\,(d_0 + x) - 1 + k. \qquad (\ast)
+$$
 
 The right side uses only things the attacker can guess ($k$, $x$) or knows ($e$, $d_0$).
 For the **correct** pair $(k, x)$ the value is $k\,p$, which is divisible by $p$ but **not** by $q$
